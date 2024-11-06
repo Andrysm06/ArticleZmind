@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Zmind from "../../public/image/ZmindLogo.png";
-import { useNavigate } from "react-router-dom";
+import Zminds from "../../public/image/ZmindLogo.png";
+import { useNavigate, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-3">
           <img
-            src={Zmind}
+            src={Zminds}
             alt="Zmind Logo"
             onClick={() => navigate("/")}
             className="h-6 w-18 md:h-9 md:w-18 object-cover cursor-pointer"
@@ -43,12 +43,12 @@ const Navbar = () => {
           >
             Kontak Kami
           </a>
-          <a
-            href="/Zmind"
+          <Link
+            to="/Zmind"
             className="text-black hover:text-gray-600 transition duration-300"
           >
             Tentang Kami
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -68,13 +68,12 @@ const Navbar = () => {
           >
             Kontak Kami
           </a>
-          <a
-            href="/Zmind"
+          <Link
+            to="/Zmind"
             className="text-black hover:text-gray-600 transition duration-300"
-            onClick={() => setIsMenuOpen(false)}
           >
             Tentang Kami
-          </a>
+          </Link>
         </div>
       )}
     </nav>
