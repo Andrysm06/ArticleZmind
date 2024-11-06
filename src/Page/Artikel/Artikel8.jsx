@@ -21,7 +21,7 @@ const Artikel8 = () => {
           </button>
 
           <h1 className="text-3xl sm:text-4xl font-extrabold text-center text-gray-800 mb-4 sm:mb-6">
-            Mindfulness: Apa Itu dan Bagaimana Bisa Membantu Kesehatan Mental
+            Mindfulness
           </h1>
 
           <img

@@ -32,8 +32,9 @@ const Artikel7 = () => {
           <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
             <strong>
               Pentingnya Hubungan Sosial Untuk Kesehatan Mental dan Tips
-              Memperkuatnya
+              Memperkuatnya.
             </strong>
+            <br />
             <br />
             Di dunia yang semakin terhubung secara digital, kita sering kali
             merasa lebih sendirian daripada sebelumnya. Mungkin Anda pernah

@@ -21,7 +21,7 @@ const Artikel5 = () => {
           </button>
 
           <h1 className="text-3xl sm:text-4xl font-extrabold text-center text-gray-800 mb-4 sm:mb-6">
-            Gizi untuk Kesehatan Mental: Nutrisi Otak dan Pola Makan Sehat
+            Gizi untuk Kesehatan Mental, Nutrisi Otak dan Pola Makan Sehat
           </h1>
 
           <img

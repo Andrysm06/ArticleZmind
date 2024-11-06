@@ -21,7 +21,7 @@ const Artikel9 = () => {
           </button>
 
           <h1 className="text-3xl sm:text-4xl font-extrabold text-center text-gray-800 mb-4 sm:mb-6">
-            Memahami Gangguan Bipolar: Gejala, Pengobatan, dan Dukungan
+            Memahami Gangguan Bipolar, Gejala, Pengobatan, dan Dukungan
           </h1>
 
           <img

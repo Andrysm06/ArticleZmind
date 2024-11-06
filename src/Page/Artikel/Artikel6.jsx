@@ -30,7 +30,9 @@ const Artikel6 = () => {
           />
 
           <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
-            <strong>Apa sih manfaat olahraga bagi kesehatan mental?</strong>{" "}
+            <strong>Apa sih manfaat olahraga bagi kesehatan mental?</strong>
+            <br />
+            <br />
             Olahraga memiliki berbagai manfaat untuk kesehatan mental yang telah
             dibuktikan oleh banyak penelitian. Menurut American Psychological
             Association, aktivitas fisik dapat mengurangi gejala kecemasan dan

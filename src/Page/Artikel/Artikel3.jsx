@@ -21,7 +21,7 @@ const Artikel3 = () => {
           </button>
 
           <h1 className="text-3xl sm:text-4xl font-extrabold text-center text-gray-800 mb-4 sm:mb-6">
-            Tentang Stres: Musuh Senyap Kesejahteraan Kita
+            Tentang Stres
           </h1>
 
           <img
