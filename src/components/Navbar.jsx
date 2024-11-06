@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Zminds from "../../public/image/ZmindLogo.png";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom"; // Import Link correctly
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"; // Import faTimes
 
@@ -39,18 +39,18 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex space-x-6">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="text-black hover:text-gray-600 transition duration-300 hover:scale-105"
           >
             Artikel
-          </a>
-          <a
-            href="#projects"
+          </Link>
+          <Link
+            to="/ContactUs"
             className="text-black hover:text-gray-600 transition duration-300 hover:scale-105"
           >
             Kontak Kami
-          </a>
+          </Link>
           <Link
             to="/Zmind"
             className="text-black hover:text-gray-600 transition duration-300 hover:scale-105"
@@ -62,20 +62,20 @@ const Navbar = () => {
 
       {isMenuOpen && (
         <div className="md:hidden flex flex-col space-y-4 mt-4 px-4 py-2 bg-white shadow-md rounded-lg">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="text-black hover:text-gray-600 transition duration-300 hover:scale-105"
             onClick={() => setIsMenuOpen(false)}
           >
             Artikel
-          </a>
-          <a
-            href="#projects"
+          </Link>
+          <Link
+            to="/ContactUs"
             className="text-black hover:text-gray-600 transition duration-300 hover:scale-105"
             onClick={() => setIsMenuOpen(false)}
           >
             Kontak Kami
-          </a>
+          </Link>
           <Link
             to="/Zmind"
             className="text-black hover:text-gray-600 transition duration-300 hover:scale-105"

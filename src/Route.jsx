@@ -15,6 +15,7 @@ import Artikel10 from "./Page/Artikel/Artikel10";
 
 import Home from "./Page/Home";
 import TentangKami from "./components/Zmind";
+import ContactUs from "./components/ContactUs";
 
 const router = createBrowserRouter([
   {
@@ -68,6 +69,10 @@ const router = createBrowserRouter([
   {
     path: "Zmind",
     element: <TentangKami />,
+  },
+  {
+    path: "ContactUs",
+    element: <ContactUs />,
   },
 ]);
 
