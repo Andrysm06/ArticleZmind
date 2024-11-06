@@ -110,8 +110,8 @@ const ArtikelPage = () => {
     <>
       <Navbar />
       <div className="flex justify-center items-center min-h-screen py-24 bg-gray-100">
-        <div className="w-full max-w-5xl p-6  bg-white shadow-lg rounded-lg">
-          <h1 className="text-3xl font-bold text-center mb-6">
+        <div className="w-full max-w-5xl p-6 bg-white shadow-lg rounded-3xl">
+          <h1 className="text-4xl font-bold text-center mb-8 text-gray-800  pb-4">
             Daftar Artikel
           </h1>
 
@@ -119,17 +119,17 @@ const ArtikelPage = () => {
             {displayedArticles.map((article) => (
               <div
                 key={article.id}
-                className="bg-gray-50 shadow-md rounded-lg overflow-hidden transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+                className="bg-white border border-gray-200 shadow-md rounded-lg overflow-hidden transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
               >
                 <Link to={article.link}>
                   <img
                     src={article.image}
                     alt={article.title}
-                    className="w-full h-40 object-cover transform transition duration-300 ease-in-out hover:scale-110"
+                    className="w-full h-48 object-cover transition duration-300 ease-in-out hover:scale-110"
                   />
                 </Link>
                 <div className="p-4">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-800 transform transition duration-300 ease-in-out hover:text-blue-500">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-800 transition duration-300 ease-in-out hover:text-blue-500">
                     <Link to={article.link}>{article.title}</Link>
                   </h2>
                   <p className="text-gray-600">{article.description}</p>
@@ -138,18 +138,18 @@ const ArtikelPage = () => {
             ))}
           </div>
 
-          <div className="flex justify-between mt-4">
+          <div className="flex justify-center space-x-4 mt-6">
             <button
               onClick={handlePrev}
               disabled={currentPage === 0}
-              className="px-4 py-2 bg-blue-400 text-white rounded-md hover:bg-blue-600 disabled:bg-gray-400 disabled:cursor-not-allowed"
+              className="px-4 py-2 text-white font-medium rounded-md transform transition duration-300 ease-in-out hover:scale-105 bg-blue-400 hover:bg-blue-600 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:hover:scale-100"
             >
               Previous
             </button>
             <button
               onClick={handleNext}
               disabled={currentPage === totalPages - 1}
-              className="px-4 py-2 bg-blue-400 text-white rounded-md hover:bg-blue-600 disabled:bg-gray-400 disabled:cursor-not-allowed"
+              className="px-4 py-2 text-white font-medium rounded-md transform transition duration-300 ease-in-out hover:scale-105 bg-blue-400 hover:bg-blue-600 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:hover:scale-100"
             >
               Next
             </button>
