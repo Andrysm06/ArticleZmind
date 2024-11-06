@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Logo from "../../public/image/ZmindLogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
@@ -25,14 +26,11 @@ const TentangKami = () => {
           <h1 className="text-3xl sm:text-4xl font-extrabold text-center text-gray-800 mb-4 sm:mb-6">
             Tentang Z Mind
           </h1>
-
-          <div className="flex items-center justify-center">
+          <div className="flex justify-center">
             <img
-              src="/image/ZmindLogo.png"
-              alt="Ilustrasi Z Mind"
+              src={Logo}
+              alt="Ilustrasi Ilustrasi Z Mind"
               className="h-10 sm:h-20 object-cover rounded-lg mb-4"
-              onLoad={() => console.log("ZmindLogo image loaded")}
-              onError={() => console.error("Failed to load ZmindLogo image")}
             />
           </div>
 
