@@ -39,12 +39,6 @@ const Footer = () => {
             <FontAwesomeIcon icon={faYoutube} size="2x" />
           </a>
         </div>
-
-        <div className="mt-4">
-          <a href="/Zmind" className="hover:underline text-black">
-            Tentang Kami
-          </a>
-        </div>
       </div>
     </footer>
   );
