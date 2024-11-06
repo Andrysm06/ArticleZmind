@@ -12,7 +12,6 @@ const Footer = () => {
       <div className="container mx-auto text-center">
         <p>&copy; {new Date().getFullYear()} Zmind. All rights reserved</p>
         <div className="flex justify-center space-x-4 mt-2">
-          {/* Instagram */}
           <a
             href="https://www.instagram.com/aliffa.ds/"
             target="_blank"
@@ -22,9 +21,8 @@ const Footer = () => {
             <FontAwesomeIcon icon={faInstagram} size="2x" />
           </a>
 
-          {/* Facebook */}
           <a
-            href="https://www.facebook.com" // Ganti dengan URL Facebook Anda
+            href="https://www.facebook.com"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"
@@ -32,14 +30,19 @@ const Footer = () => {
             <FontAwesomeIcon icon={faFacebook} size="2x" />
           </a>
 
-          {/* YouTube */}
           <a
-            href="https://www.youtube.com" // Ganti dengan URL YouTube Anda
+            href="https://www.youtube.com"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"
           >
             <FontAwesomeIcon icon={faYoutube} size="2x" />
+          </a>
+        </div>
+
+        <div className="mt-4">
+          <a href="/Zmind" className="hover:underline text-black">
+            Tentang Kami
           </a>
         </div>
       </div>

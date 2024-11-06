@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import Zmind from "../../public/image/ZmindLogo.png";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons"; // Import Font Awesome bars icon
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle the menu visibility
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
 
-  // Toggle the menu open/close
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -25,14 +24,12 @@ const Navbar = () => {
           />
         </div>
 
-        {/* Mobile Hamburger Icon */}
         <div className="md:hidden">
           <button onClick={toggleMenu}>
             <FontAwesomeIcon icon={faBars} className="text-black text-2xl" />
           </button>
         </div>
 
-        {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
           <a
             href="/"
@@ -55,13 +52,12 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu (Conditional rendering) */}
       {isMenuOpen && (
         <div className="md:hidden flex flex-col space-y-4 mt-4 px-4 py-2 bg-white shadow-md rounded-lg">
           <a
             href="/"
             className="text-black hover:text-gray-600 transition duration-300"
-            onClick={() => setIsMenuOpen(false)} // Close menu when an item is clicked
+            onClick={() => setIsMenuOpen(false)}
           >
             Artikel
           </a>
