@@ -12,8 +12,9 @@ import Artikel7 from "./Page/Artikel/Artikel7";
 import Artikel8 from "./Page/Artikel/Artikel8";
 import Artikel9 from "./Page/Artikel/Artikel9";
 import Artikel10 from "./Page/Artikel/Artikel10";
-import About from "./components/About";
+
 import Home from "./Page/Home";
+import TentangKami from "./components/Zmind";
 
 const router = createBrowserRouter([
   {
@@ -65,8 +66,8 @@ const router = createBrowserRouter([
     element: <Artikel10 />,
   },
   {
-    path: "About",
-    element: <About />,
+    path: "Zmind",
+    element: <TentangKami />,
   },
 ]);
 

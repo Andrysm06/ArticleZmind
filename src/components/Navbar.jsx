@@ -44,7 +44,7 @@ const Navbar = () => {
             Kontak Kami
           </a>
           <a
-            href="/About"
+            href="/Zmind"
             className="text-black hover:text-gray-600 transition duration-300"
           >
             Tentang Kami
@@ -69,7 +69,7 @@ const Navbar = () => {
             Kontak Kami
           </a>
           <a
-            href="/About"
+            href="/Zmind"
             className="text-black hover:text-gray-600 transition duration-300"
             onClick={() => setIsMenuOpen(false)}
           >
