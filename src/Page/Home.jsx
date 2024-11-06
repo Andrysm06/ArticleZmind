@@ -16,14 +16,14 @@ import A10 from "../../public/image/Artikel10.jpg";
 const articles = [
   {
     id: 1,
-    title: "Memahami Depresi: Lebih dari Sekadar Sedih",
+    title: "Memahami Depresi Lebih dari Sekadar Sedih",
     description: "Deskripsi artikel 1",
     image: A1,
     link: "/Artikel1",
   },
   {
     id: 2,
-    title: "Kecemasan: Mengelola Kekhawatiran Yang Berlebihan",
+    title: "Kecemasan Mengelola Kekhawatiran Yang Berlebihan",
     description: "Deskripsi artikel 2",
     image: A2,
     link: "/Artikel2",
@@ -65,8 +65,8 @@ const articles = [
   },
   {
     id: 8,
-    title: "Mindfulness: Apa Itu dan Bagaimana Bisa Membantu Kesehatan Mental",
-    description: "Deskripsi artikel 8",
+    title: "Mindfulness",
+    description: "Apa Itu dan Bagaimana Bisa Membantu Kesehatan Mental?",
     image: A8,
     link: "/Artikel8",
   },
