@@ -5,8 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 const TentangKami = () => {
-  console.log("Rendering TentangKami component");
-
   return (
     <div>
       <Navbar />
@@ -14,7 +12,6 @@ const TentangKami = () => {
         <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-6 sm:p-8">
           <button
             onClick={() => {
-              console.log("Back button clicked");
               window.history.back();
             }}
             className="flex items-center text-black px-4 py-3 rounded-md hover:text-gray-600 transition duration-300 mb-6 sm:mb-8 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500"

@@ -12,6 +12,8 @@ import A7 from "../../public/image/Artikel7.jpg";
 import A8 from "../../public/image/Artikel8.jpg";
 import A9 from "../../public/image/Artikel9.jpg";
 import A10 from "../../public/image/Artikel10.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const articles = [
   {
@@ -144,14 +146,14 @@ const ArtikelPage = () => {
               disabled={currentPage === 0}
               className="px-4 py-2 text-white font-medium rounded-md transform transition duration-300 ease-in-out hover:scale-105 bg-blue-400 hover:bg-blue-600 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:hover:scale-100"
             >
-              Previous
+              <FontAwesomeIcon icon={faArrowLeft} />
             </button>
             <button
               onClick={handleNext}
               disabled={currentPage === totalPages - 1}
               className="px-4 py-2 text-white font-medium rounded-md transform transition duration-300 ease-in-out hover:scale-105 bg-blue-400 hover:bg-blue-600 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:hover:scale-100"
             >
-              Next
+              <FontAwesomeIcon icon={faArrowRight} />
             </button>
           </div>
         </div>
